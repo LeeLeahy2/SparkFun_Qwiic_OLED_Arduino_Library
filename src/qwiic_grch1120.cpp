@@ -466,7 +466,7 @@ void QwGrCH1120::clearScreenBuffer(void)
     // Clear out the screen buffer on the device
     uint8_t emptyPage[kPageMax] = {0};
 
-    for (int i = 0 ; i < kMaxPageNumber; i++)
+    for (int i = 0 ; i < kMaxPageNumberCH1120; i++)
     {
         setScreenBufferAddress(0, i);
         sendDevData(emptyPage, kPageMax);
