@@ -967,7 +967,7 @@ void QwGrCH1120::drawBitmap(uint8_t x0, uint8_t y0, uint8_t dst_width, uint8_t d
         bmp_y += neededBits;
         
         pageCheckBoundsRange(m_pageState[iPage], x0,
-                        x0 + dst_width); // mark dirty range in page desc
+                        x0 + dst_width - 1); // mark dirty range in page desc
     }
 }
 
